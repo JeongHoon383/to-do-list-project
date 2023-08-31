@@ -1,12 +1,16 @@
-//12300원을 받았을때 각각 얼마로 출력되는지 구해주면 됨
-let unit = [50000, 10000, 5000, 1000, 500, 100]
-function money(money){
-  for(let i = 0; i < unit.length; i++){
+let computerNum = 0
 
-    let num = Math.floor(money / unit[i])
-    console.log(unit[i]+ '*' + num);
-    money = money - (unit[i]*num)
-  }
+let goButton = document.getElementById('.go-btn')
+console.log(goButton);
+
+
+function pickRandomNum (){
+  computerNum = Math.floor(Math.random()*100)+1
+  console.log(computerNum);
 }
 
-console.log(money(12300));
+function play(){
+  console.log("게임시작");
+}
+
+pickRandomNum()
