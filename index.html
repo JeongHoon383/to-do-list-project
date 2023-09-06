@@ -7,18 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>숫자 맞추기 게임!</h1>
     <ul>
-      <li>1부터 100까지 숫자를 넣으면 정답이 나와요!</li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        1부터 100까지의 숫자를 넣었을때 정답을 맞춰라!
+        버튼을 클릭했을때 총 5회 횟수 차감 
+      </li>
     </ul>
+    <h1>숫자 맞추기 게임</h1>
     <div class="ex1">
-      <input id="num" type="number">
-      <button>결과보기</button>
+      <input id="user-input" type="number">
+      <button id="go-btn">go</button>
       <p id="result"></p>
+      <button id="reset">리셋</button>
     </div>
+    
   </body>
   <script src="./js/script.js"></script>
 </html>
